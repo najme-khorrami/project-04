@@ -1,1 +1,26 @@
 <!-- <script src="js/vendor.js"></script> -->
+<script src="../vendor/OwlCarousel2-2.3.4/docs/assets/vendors/jquery.min.js"></script>
+<script src="../vendor/OwlCarousel2-2.3.4/docs/assets/owlcarousel/owl.carousel.min.js"></script>
+<script>
+    $('.owl-carousel').owlCarousel({
+    loop:true,
+    items:3,
+    nav:false,
+    dots:false,
+    autoplay:true,
+    margin:18,
+    autoplayTimeout:3000,
+    responsiveClass:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        992:{
+            items:2
+        },
+        1200:{
+            items:3
+        }
+    }
+})
+</script>
